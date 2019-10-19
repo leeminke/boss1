@@ -436,7 +436,7 @@ async def JointheVC(VCchannel, TXchannel):
 			await PlaySound(voice_client1, './sound/hello.mp3')
 		task1 = client.loop.create_task(my_background_task())
 	else:
-		await client.send_message(client.get_channel(TXchannel), '음성채널에 먼저 들어가주세요.', tts=False)
+		#await client.send_message(client.get_channel(TXchannel), '음성채널에 먼저 들어가주세요.', tts=False)
 
 # 봇이 구동되었을 때 동작되는 코드입니다.
 @client.event
